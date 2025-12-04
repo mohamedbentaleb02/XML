@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<ListeCours>
+    <cours num="97" LANG="fr" SUBJECT="développement">
+        <Titre>Technologie XML</Titre>
+        <Resume>Ce cours présente la liste des technologies Web</Resume>
+        <objectifs>
+            <objectif>Connaître le meta langage XML</objectif>
+            <objectif>Connaître la technologie semi-structurée</objectif>
+        </objectifs>
+        <prerequis>HTML, Web, Client-Serveur</prerequis>
+        <motscles>
+            <motcle>XML</motcle>
+            <motcle>XSD</motcle>
+            <motcle>XQuery</motcle>
+        </motscles>
+        <auteurs>
+            <auteur>Ahmed ZELLOU</auteur>
+        </auteurs>
+        <tuteurs>
+            <tuteur>Jean Dupont</tuteur>
+        </tuteurs>
+        <type>Présentiel</type>
+        <duree>50h</duree>
+        
+        <seances>
+            <seance>
+                <titre>Introduction et Syntaxe</titre>
+                <type>Cours Magistral</type>
+                <duree>2h</duree>
+                <tuteur>Ahmed ZELLOU</tuteur>
+                <objectifs_seance>Comprendre la syntaxe XML</objectifs_seance>
+                <support>
+                    <titre_support>Support Chapitre 1</titre_support>
+                    <resume_support>Les bases du balisage</resume_support>
+                    <lien_acces>chap1.pdf</lien_acces>
+                </support>
+            </seance>
+            <seance>
+                <titre>Atelier XSLT</titre>
+                <type>TP</type>
+                <duree>4h</duree>
+                <tuteur>Jean Dupont</tuteur>
+                <objectifs_seance>Transformer des données</objectifs_seance>
+                <support>
+                    <titre_support>Enoncé TP4</titre_support>
+                    <resume_support>Exercices XSLT</resume_support>
+                    <lien_acces>tp4.pdf</lien_acces>
+                </support>
+            </seance>
+        </seances>
+
+        <lienAcces>http://www.um5.ac.ma/xml</lienAcces>
+    </cours>
+
+    <cours num="98" LANG="fr" SUBJECT="langage">
+        <Titre>Symfony</Titre>
+        <Resume>Ce cours présente le framework symfony</Resume>
+        <objectifs>
+            <objectif>Développer une application web en symfony</objectif>
+            <objectif>Développer une application web en PHP5</objectif>
+        </objectifs>
+        <prerequis>HTML, SGBD, PHP</prerequis>
+        <motscles>
+            <motcle>PHP</motcle>
+            <motcle>PHP5</motcle>
+            <motcle>Symfony</motcle>
+        </motscles>
+        <auteurs>
+            <auteur>Nada Chtaibi</auteur>
+            <auteur>Reda Dadda</auteur>
+        </auteurs>
+        <tuteurs>
+            <tuteur>Salem Ahmed</tuteur>
+            <tuteur>Ali Khyati</tuteur>
+        </tuteurs>
+        <type>a distance</type>
+        <duree>30h</duree>
+        <lienAcces>http://www.um5.ac.ma/symfony</lienAcces>
+    </cours>
+</ListeCours>

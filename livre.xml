@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livre>
+    <titre_principal>Le petit guide Marabout des nuages</titre_principal>
+    <sous_titre>Les observer, les reconnaître, les collectionner</sous_titre>
+    <type_produit>Ouvrage</type_produit>
+    
+    <editeurs>
+        <editeur>Marabout</editeur>
+    </editeurs>
+    
+    <auteurs>
+        <auteur>Gavin Pretor Pinney</auteur> </auteurs>
+    
+    <collection>Marabout d'nature</collection>
+    
+    <identifiants>
+        <isbn13>978-2-501-06545-0</isbn13>
+        <ean13>9782501065450</ean13>
+        <isbn10>2-501-06545-X</isbn10>
+    </identifiants>
+    
+    <parution>
+        <jour>19</jour>
+        <mois>05</mois>
+        <annee>2010</annee>
+    </parution>
+    
+    <details_techniques>
+        <edition>1ère édition</edition>
+        <nb_pages>112 pages</nb_pages>
+        <format>14x19</format>
+        <couverture>Broché</couverture>
+        <poids unit="g">270</poids>
+        <interieur>Noir et Blanc</interieur>
+    </details_techniques>
+    
+    <resume>Un petit guide fort sympathique pour aiguiser son regard dans le ciel.</resume>
+    
+    <avis_lecteurs>
+        <avis lecteur="Lecteur 1">Bon livre</avis>
+        <avis lecteur="Lecteur 2">Moyen</avis>
+    </avis_lecteurs>
+</livre>

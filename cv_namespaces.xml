@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cv xmlns="http://www.cv.ma" 
+    xmlns:Dip="http://www.gmail.com" 
+    xmlns:ep="http://www.entreprise.ma">
+
+    <informations_personnelles>
+        <nom>BEN TALEB</nom>
+        <prenom>Mohamed</prenom>
+        <sexe>M</sexe>
+        </informations_personnelles>
+
+    <diplomes>
+        <Dip:diplome>
+            <Dip:designation>Ingenieur</Dip:designation>
+            <Dip:date>2025</Dip:date>
+            <Dip:affiliation>Université Mohammed V</Dip:affiliation>
+            <Dip:serie>iT</Dip:serie>
+            <Dip:mention>Très Bien</Dip:mention>
+        </Dip:diplome>
+    </diplomes>
+
+    <domaines_competence>
+        <domaine>
+            <intitule>Technologies .NET</intitule>
+            <niveau>Expert</niveau>
+        </domaine>
+    </domaines_competence>
+
+    <experiences_professionnelles>
+        <ep:experience type="Travail">
+            <ep:designation>Developer</ep:designation>
+            <ep:date_debut>2023</ep:date_debut>
+            <ep:date_fin>Aujourd'hui</ep:date_fin>
+            <ep:affiliation>Capgemini</ep:affiliation>
+            <ep:mission>software enginner</ep:mission>
+        </ep:experience>
+    </experiences_professionnelles>
+
+    <loisirs>
+        <loisir>Football</loisir>
+    </loisirs>
+
+</cv>

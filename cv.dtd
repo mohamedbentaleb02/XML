@@ -1,0 +1,39 @@
+<!ELEMENT cv (informations_personnelles, diplomes, domaines_competence, experiences_professionnelles, langues, loisirs)>
+
+<!ELEMENT informations_personnelles (nom, prenom, sexe, date_naissance, contact)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT sexe (#PCDATA)>
+<!ELEMENT date_naissance (jour, mois, annee)>
+<!ELEMENT jour (#PCDATA)>
+<!ELEMENT mois (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT contact (adresse, telephone, mail)>
+<!ELEMENT adresse (#PCDATA)>
+<!ELEMENT telephone (#PCDATA)>
+<!ELEMENT mail (#PCDATA)>
+
+<!ELEMENT diplomes (diplome+)>
+<!ELEMENT diplome (designation, date, affiliation, serie, mention?)>
+<!ELEMENT designation (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT affiliation (#PCDATA)>
+<!ELEMENT serie (#PCDATA)>
+<!ELEMENT mention (#PCDATA)>
+
+<!ELEMENT domaines_competence (domaine*)>
+<!ELEMENT domaine (intitule, niveau, description)>
+<!ELEMENT intitule (#PCDATA)>
+<!ELEMENT niveau (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT experiences_professionnelles (experience*)>
+<!ELEMENT experience (designation, date_debut, date_fin, affiliation, mission)>
+<!ATTLIST experience type CDATA #REQUIRED> <!ELEMENT date_debut (#PCDATA)>
+<!ELEMENT date_fin (#PCDATA)>
+<!ELEMENT mission (#PCDATA)>
+
+<!ELEMENT langues (langue*)>
+<!ELEMENT langue (#PCDATA)>
+<!ATTLIST langue niveau (Scolaire|Moyen|Courant|Bilingue) "Moyen"> <!ELEMENT loisirs (loisir*)>
+<!ELEMENT loisir (#PCDATA)>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annuaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="annuaire.xsd">
+
+    <personne matricule="AB123">
+        <nom>Alami</nom>
+        <prenom>Wafae</prenom>
+        <telephone>0661112233</telephone>
+        <email>alami@gmail.ma</email>
+        <sexe>F</sexe>
+        <DateNaissance>1980-10-10</DateNaissance>
+        <adresse>
+            <rue numero="12">Sebta</rue>
+            <ville>Rabat</ville>
+        </adresse>
+    </personne>
+
+    <personne matricule="XZ123" nationalite="FRA">
+        <nom>Dupont</nom>
+        <prenom>Jean</prenom>
+        <telephone>0661112244</telephone>
+        <email>jean@test.com</email>
+        <sexe>M</sexe>
+        <DateNaissance>1990-01-01</DateNaissance>
+        <adresse>
+            <rue numero="5">Agdal</rue>
+            <ville>Rabat</ville>
+        </adresse>
+    </personne>
+
+</annuaire>

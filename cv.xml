@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cv SYSTEM "cv.dtd">
+<cv>
+    <informations_personnelles>
+        <nom>BEN TALEB</nom>
+        <prenom>Mohamed</prenom>
+        <sexe>M</sexe>
+        <date_naissance>
+            <jour>02</jour>
+            <mois>03</mois>
+            <annee>2002</annee>
+        </date_naissance>
+        <contact>
+            <adresse>Agadir, Maroc</adresse>
+            <telephone>0637540371</telephone>
+            <mail>mohamedbentaleb@gmail.com</mail>
+        </contact>
+    </informations_personnelles>
+
+    <diplomes>
+        <diplome>
+            <designation>Ingénieur d'état</designation>
+            <date>2025</date>
+            <affiliation>SupMti Rabat</affiliation>
+            <serie>IT</serie>
+            <mention>Très Bien</mention>
+        </diplome>
+    </diplomes>
+
+    <domaines_competence>
+        <domaine>
+            <intitule>Technologies DotNet</intitule>
+            <niveau>Expert</niveau>
+            <description>c#, RabbitMQ, Clean architecture, Entity Framework, OAuth2</description>
+        </domaine>
+    </domaines_competence>
+
+    <experiences_professionnelles>
+        <experience type="Travail">
+            <designation>.NET Developer</designation>
+            <date_debut>2023</date_debut>
+            <date_fin>Aujourd'hui</date_fin>
+            <affiliation>ACG</affiliation>
+            <mission>Consultant IT</mission>
+        </experience>
+    </experiences_professionnelles>
+
+    <langues>
+        <langue niveau="Courant">Français</langue>
+        <langue niveau="Moyen">Anglais</langue>
+    </langues>
+
+    <loisirs>
+        <loisir>Football</loisir>
+        <loisir>Voyage</loisir>
+    </loisirs>
+</cv>

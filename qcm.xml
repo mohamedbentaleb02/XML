@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qcm>
+    <entete>
+        <auteur>MIT</auteur>
+        <niveau>2</niveau>
+        <nombre_questions>3</nombre_questions>
+    </entete>
+
+    <questions>
+        <question numero="1">
+            <libelle>Dans quel pays habitent les Maures ?</libelle>
+            <reponses>
+                <reponse id="1">la Mauritanie</reponse>
+                <reponse id="2">le Maroc</reponse>
+                <reponse id="3">le Mali</reponse>
+            </reponses>
+            <reponse_juste>la Mauritanie</reponse_juste>
+        </question>
+
+        <question numero="2">
+            <libelle>Quel est le pays à avoir lancé le premier un satellite?</libelle>
+            <reponses>
+                <reponse id="1">USA</reponse>
+                <reponse id="2">la France</reponse>
+                <reponse id="3">l'URSS</reponse>
+            </reponses>
+            <reponse_juste>l'URSS</reponse_juste>
+        </question>
+
+        <question numero="3">
+            <libelle>Quel fut le premier livre imprimé par Gutenberg ?</libelle>
+            <reponses>
+                <reponse id="1">le Petit Robert</reponse>
+                <reponse id="2">l'Encyclopaedia Universalis</reponse>
+                <reponse id="3">la Bible</reponse>
+            </reponses>
+            <reponse_juste>la Bible</reponse_juste>
+        </question>
+    </questions>
+</qcm>
