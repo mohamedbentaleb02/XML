@@ -5,83 +5,73 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>Tableau des Cours</title>
+                <title>Détail des Séances</title>
                 <style>
-                    table { border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; }
-                    th { background-color: #4CAF50; color: white; padding: 10px; }
-                    td { border: 1px solid #ddd; padding: 8px; vertical-align: top; }
-                    tr:nth-child(even) { background-color: #f2f2f2; }
-                    .tag { background-color: #ddd; padding: 2px 5px; border-radius: 4px; font-size: 0.9em; margin-right: 3px; display: inline-block; margin-bottom: 3px;}
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+                    th { background-color: #003366; color: white; padding: 12px; text-align: left;}
+                    td { border: 1px solid #ddd; padding: 10px; vertical-align: top; }
+                    tr:nth-child(even) { background-color: #f9f9f9; }
+                    .info-cours { background-color: #e3f2fd; padding: 15px; border-left: 5px solid #2196F3; }
                 </style>
             </head>
             <body>
-                <h1 style="text-align:center;">Tableau Récapitulatif des Cours</h1>
-                
+                <div class="info-cours">
+                    <h1>Planning du cours : <xsl:value-of select="ListeCours/cours[Titre='Technologie XML']/Titre"/></h1>
+                    <p><b>Intervenant principal :</b> <xsl:value-of select="ListeCours/cours[Titre='Technologie XML']/auteurs/auteur"/></p>
+                </div>
+
                 <table>
                     <thead>
                         <tr>
-                            <th>Titre</th>
-                            <th width="20%">Résumé</th>
-                            <th>Objectifs &amp; Prérequis</th>
-                            <th>Détails (Langue, Type, Durée)</th>
-                            <th>Mots-clés</th>
-                            <th>Équipe Pédagogique</th>
+                            <th>Séance</th>
+                            <th>Infos (Type/Durée)</th>
+                            <th>Tuteur</th>
+                            <th>Objectifs de la séance</th>
+                            <th>Support de cours</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <xsl:for-each select="ListeCours/cours">
-                            
-                            <xsl:sort select="Titre" order="ascending"/> 
-
+                        <xsl:for-each select="ListeCours/cours[Titre='Technologie XML']/seances/seance">
                             <tr>
                                 <td>
-                                    <b><xsl:value-of select="Titre"/></b><br/>
-                                    <a href="{lienAcces}" target="_blank" style="font-size:0.8em; color:blue;">(Voir le site)</a>
+                                    <b><xsl:value-of select="titre"/></b>
                                 </td>
-
-                                <td><xsl:value-of select="Resume"/></td>
-
+                                
                                 <td>
-                                    <b>Objectifs :</b>
-                                    <ul>
-                                        <xsl:for-each select="objectifs/objectif">
-                                            <li><xsl:value-of select="."/></li>
-                                        </xsl:for-each>
-                                    </ul>
-                                    <b>Prérequis :</b> <br/>
-                                    <i><xsl:value-of select="prerequis"/></i>
+                                    <span style="color:green"><xsl:value-of select="type"/></span><br/>
+                                    ⏱ <xsl:value-of select="duree"/>
                                 </td>
 
                                 <td>
-                                    <b>Langue :</b> <xsl:value-of select="@LANG"/><br/>
-                                    <b>Type :</b> <xsl:value-of select="type"/><br/>
-                                    <b>Durée :</b> <xsl:value-of select="duree"/>
+                                    <xsl:value-of select="tuteur"/>
                                 </td>
 
                                 <td>
-                                    <xsl:for-each select="motscles/motcle">
-                                        <span class="tag"><xsl:value-of select="."/></span>
-                                    </xsl:for-each>
+                                    <xsl:value-of select="objectifs_seance"/>
                                 </td>
 
                                 <td>
-                                    <u>Auteurs :</u><br/>
-                                    <xsl:for-each select="auteurs/auteur">
-                                        - <xsl:value-of select="."/><br/>
-                                    </xsl:for-each>
+                                    <b><xsl:value-of select="support/titre_support"/></b><br/>
+                                    <i><xsl:value-of select="support/resume_support"/></i><br/><br/>
                                     
-                                    <br/>
-                                    <xsl:if test="tuteurs/tuteur">
-                                        <u>Tuteurs :</u><br/>
-                                        <xsl:for-each select="tuteurs/tuteur">
-                                            - <xsl:value-of select="."/><br/>
-                                        </xsl:for-each>
-                                    </xsl:if>
+                                    <a style="background:orange; color:white; padding:5px 10px; text-decoration:none; border-radius:3px;" 
+                                       target="_blank">
+                                        <xsl:attribute name="href">
+                                            <xsl:value-of select="support/lien_acces"/>
+                                        </xsl:attribute>
+                                        📄 Télécharger
+                                    </a>
                                 </td>
                             </tr>
                         </xsl:for-each>
                     </tbody>
                 </table>
+
+                <xsl:if test="not(ListeCours/cours[Titre='Technologie XML']/seances/seance)">
+                    <p style="color:red; margin-top:20px;">Aucune séance planifiée pour ce cours.</p>
+                </xsl:if>
+
             </body>
         </html>
     </xsl:template>
